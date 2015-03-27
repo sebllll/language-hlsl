@@ -1,0 +1,55 @@
+'fileTypes': [
+  'vs'
+  'ps'
+  'gs'
+  'vsh'
+  'fxh'
+  'gsh'
+  'fx'
+  'h'
+  'hlsl'
+]
+'foldingStartMarker': '/\\*\\*|\\{\\s*$'
+'foldingStopMarker': '\\*\\*/|^\\s*\\}'
+'name': 'HLSL'
+'patterns': [
+  {
+    'match': '\\.(x|y|z|w|r|g|b|a){1,4}'
+    'name': 'keyword.operator.hlsl'
+  }
+  {
+    'match': '\\b(break|case|continue|default|discard|do|else|for|if|return|switch|while)\\b'
+    'name': 'keyword.control.hlsl'
+  }
+  {
+    'match': '\\b(void|bool|int|uint|float|float2|float3|float4|bfloat2|bfloat3|bfloat4|ifloat2|ifloat2|ifloat3|ufloat2|ufloat2|ufloat3|mat2|matrix3|matrix4|matrix2x2|matrix2x3|matrix2x4|matrix3x2|matrix3x3|matrix3x4|matrix4x2|matrix4x3|mat4rixx4|sample[1|2|3]D|sampleCube|sampleLevel|sample[1|2]DShadow|sample2DRectShadow|sample[1|2]DArray|sample[1|2]DArrayShadow|sampleBuffer|sample2DMS|sample2DMSArray|struct|isample[1|2|3]D|isampleCube|isample2DRect|isample[1|2]DArray|isampleBuffer|isample2DMS|isample2DMSArray|usample[1|2|3]D|usampleCube|usample2DRect|usample[1|2]DArray|usampleBuffer|usample2DMS|usample2DMSArray)\\b'
+    'name': 'storage.type.hlsl'
+  }
+  {
+    'match': '\\b(attribute|centroid|sample|patch|const|flat|in|inout|invariant|noperspective|out|smooth|uniform|varying|buffer|shared)\\b'
+    'name': 'storage.modifier.hlsl'
+  }
+  {
+    'match':
+    
+     '\\b(BackColor|BackLightModelProduct|BackLightProduct|BackMaterial|BackSecondaryColor|ClipDistance|ClipPlane|ClipVertex|Color|DepthRange|DepthRangeParameters|EyePlaneQ|EyePlaneR|EyePlaneS|EyePlaneT|Fog|FogCoord|FogFragCoord|FogParameters|FragColor|FragCoord|FragDat|FragDept|FrontColor|FrontFacing|FrontLightModelProduct|FrontLightProduct|FrontMaterial|FrontSecondaryColor|InstanceID|Layer|LightModel|LightModelParameters|LightModelProducts|LightProducts|LightSource|LightSourceParameters|MaterialParameters|ModelViewMatrix|ModelViewMatrixInverse|ModelViewMatrixInverseTranspose|ModelViewMatrixTranspose|ModelViewProjectionMatrix|ModelViewProjectionMatrixInverse|ModelViewProjectionMatrixInverseTranspose|ModelViewProjectionMatrixTranspose|MultiTexCoord[0-7]|Normal|NormalMatrix|NormalScale|ObjectPlaneQ|ObjectPlaneR|ObjectPlaneS|ObjectPlaneT|Point|PointCoord|PointParameters|PointSize|Position|PrimitiveIDIn|ProjectionMatrix|ProjectionMatrixInverse|ProjectionMatrixInverseTranspose|ProjectionMatrixTranspose|SecondaryColor|TexCoord|TextureEnvColor|TextureMatrix|TextureMatrixInverse|TextureMatrixInverseTranspose|TextureMatrixTranspose|Vertex|VertexID)\\b'
+    'name': 'support.variable.hlsl'
+  }
+  {
+    'match': '\\b(MaxClipPlanes|MaxCombinedTextureImageUnits|MaxDrawBuffers|MaxFragmentUniformComponents|MaxLights|MaxTextureCoords|MaxTextureImageUnits|MaxTextureUnits|MaxVaryingFloats|MaxVertexAttribs|MaxVertexTextureImageUnits|MaxVertexUniformComponents)\\b'
+    'name': 'support.constant.hlsl'
+  }
+  {
+    'match':
+'\\b(abort|abs|acos|all|AllMemoryBarrier|AllMemoryBarrierWithGroupSync|any|asdouble|asfloat|asin|asint|asint|asuint|asuint|atan|atan2|ceil|CheckAccessFullyMapped|clamp|clip|cos|cosh|countbits|cross|D3DCOLORtoUBYTE4|ddx|ddx_coarse|ddx_fine|ddy|ddy_coarse|ddy_fine|degrees|determinant|DeviceMemoryBarrier|DeviceMemoryBarrierWithGroupSync|distance|dot|dst|errorf|EvaluateAttributeAtCentroid|EvaluateAttributeAtSample|EvaluateAttributeSnapped|exp|exp2|f16tof32|f32tof16|faceforward|firstbithigh|firstbitlow|floor|fma|fmod|frac|frexp|fwidth|GetRenderTargetSampleCount|GetRenderTargetSamplePosition|GroupMemoryBarrier|GroupMemoryBarrierWithGroupSync|InterlockedAdd|InterlockedAnd|InterlockedCompareExchange|InterlockedCompareStore|InterlockedExchange|InterlockedMax|InterlockedMin|InterlockedOr|InterlockedXor|isfinite|isinf|isnan|ldexp|length|lerp|lit|log|log10|log2|mad|max|min|modf|msad4|mul|noise|normalize|pow|printf|Process2DQuadTessFactorsAvg|Process2DQuadTessFactorsMax|Process2DQuadTessFactorsMin|ProcessIsolineTessFactors|ProcessQuadTessFactorsAvg|ProcessQuadTessFactorsMax|ProcessQuadTessFactorsMin|ProcessTriTessFactorsAvg|ProcessTriTessFactorsMax|ProcessTriTessFactorsMin|radians|rcp|reflect|refract|reversebits|round|rsqrt|saturate|sign|sin|sincos|sinh|smoothstep|sqrt|step|tan|tanh|tex1D|tex1D|tex1Dbias|tex1Dgrad|tex1Dlod|tex1Dproj|tex2D|tex2D|tex2Dbias|tex2Dgrad|tex2Dlod|tex2Dproj|tex3D|tex3D|tex3Dbias|tex3Dgrad|tex3Dlod|tex3Dproj|texCUBE|texCUBE|texCUBEbias|texCUBEgrad|texCUBElod|texCUBEproj|transpose|trunc\\b'
+    'name': 'support.function.hlsl'
+  }
+  {
+    'match': '\\b(asm|double|enum|extern|goto|inline|long|short|sizeof|static|typedef|union|unsigned|volatile)\\b'
+    'name': 'invalid.illegal.hlsl'
+  }
+  {
+    'include': 'source.c'
+  }
+]
+'scopeName': 'source.hlsl'

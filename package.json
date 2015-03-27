@@ -1,0 +1,43 @@
+{
+  "version": "0.0.1",
+  "name": "language-hlsl",
+  "description": "Atom language support for HLSL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebllll/language-hlsl.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebllll/language-hlsl/issues"
+  },
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "https://github.com/sebllll/language-hlsl",
+  "keywords": [
+    "language",
+    "hlsl",
+    "atom",
+    "editor",
+    "syntax"
+  ],
+  "readme": "# language-hlsl package\n\nAdds syntax highlighting and snippets to HLSL files in Atom.\n\nThis is a 'copy' from [language-hlsl](https://github.com/sebllll/language-hlsl) by [sebllll](https://github.com/sebllll).\n",
+  "readmeFilename": "README.md",
+  "_id": "language-hlsl@0.0.1",
+  "dist": {
+    "shasum": ""
+  },
+  "_resolved": "C:\\Users\\user\\AppData\\Local\\Temp\\d-11518-928-1h96h9w\\package.tgz",
+  "_from": "C:\\Users\\user\\AppData\\Local\\Temp\\d-11518-928-1h96h9w\\package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}
